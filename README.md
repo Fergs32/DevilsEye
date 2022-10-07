@@ -90,7 +90,7 @@ Here are some related projects
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[GNU 3.0](https://choosealicense.com/licenses/gpl-3.0/)
 
 
 ## Support
