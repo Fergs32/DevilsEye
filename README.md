@@ -9,7 +9,7 @@
 # In-Development
 
 - Automatic SMS (Receiver) (EU, US, UK)
-- Multithreading issues (Parallel Threading)
+- Multithreading patching (Parallel Threading)
 - Hopefully finish the First & Last name checker (Checked via open source websites etc)
 - Automatic result save
 
