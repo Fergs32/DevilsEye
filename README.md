@@ -1,3 +1,20 @@
+## Upcoming Update (2-3 Weeks | est. 04/2/23)
+
+- Instagram scrapping workaround
+- Few Bugs fixed regarding windows 11 / 10
+- Added Proxyscraper + Checker Module
+- Added more username modules
+- Made some modules more efficient
+
+# In-Development
+
+- Automatic SMS (Receiver) (EU, US, UK)
+- Multithreading issues (Parallel Threading)
+- Hopefully finish the First & Last name checker (Checked via open source websites etc)
+- Automatic result save
+
+
+
 <p align="center">
   <img src="https://user-images.githubusercontent.com/93891128/194629923-f21519bc-df46-4962-b09e-403190fe43ce.png" alt="Sublime's custom image"/></p>
 
