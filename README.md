@@ -1,17 +1,20 @@
-## Upcoming Update (2-3 Weeks | est. 04/2/23)
+![image](https://user-images.githubusercontent.com/93891128/218292760-f1cdf946-1c56-4aaf-9068-15c2489d20a3.png)
 
-- Instagram scrapping workaround
-- Few Bugs fixed regarding windows 11 / 10
-- Added Proxyscraper + Checker Module
-- Added more username modules
-- Made some modules more efficient
+# DotDoxOffical v1.0.2-beta
+- Added Spotify and Ebay Modules (Username Grabber)
+- New Email/Account Scraper (Option 13)
+- New Module (Proxyscraper + Checker)
+- Bug Fixes
+- Code Improvement
+
 
 # In-Development
 
 - Automatic SMS (Receiver) (EU, US, UK)
-- Multithreading patching (Parallel Threading)
-- Hopefully finish the First & Last name checker (Checked via open source websites etc)
-- Automatic result save
+- More Modules (Facebook and many more /w capture)
+- Making more modules multi threading (or the option to)
+- Finish the First & Last name checker (Checked via open source websites etc)
+- Automatic result save (not all modules have)
 
 
 
