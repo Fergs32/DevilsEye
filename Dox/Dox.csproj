@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Company>https://github.com/Fergs32</Company>
+    <Authors>Fergs32</Authors>
+    <Description>doxing program.</Description>
+    <ApplicationIcon>Grim_Reaper-2-512.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Debug\**" />
+    <EmbeddedResource Remove="Debug\**" />
+    <None Remove="Debug\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Application\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Colorful.Console" Version="1.2.15" />
+    <PackageReference Include="Jint" Version="2.11.58" />
+    <PackageReference Include="Leaf.xNet" Version="5.2.10" />
+    <PackageReference Include="MegaApiClient" Version="1.10.2" />
+    <PackageReference Include="Spectre.Console" Version="0.45.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CloudFlareUtilities">
+      <HintPath>bin\Debug\netcoreapp3.1\CloudFlareUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Colorful.Console">
+      <HintPath>E:\Desktop\Netflix\BIGNETFLIX_Unpacked\bin\Debug\Colorful.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="Jint">
+      <HintPath>bin\Debug\netcoreapp3.1\Jint.dll</HintPath>
+    </Reference>
+    <Reference Include="Leaf.xNet">
+      <HintPath>E:\Desktop\Netflix\BIGNETFLIX_Unpacked\bin\Debug\Leaf.xNet.dll</HintPath>
+    </Reference>
+    <Reference Include="MegaApiClient">
+      <HintPath>bin\Debug\netcoreapp3.1\MegaApiClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PostSharp">
+      <HintPath>bin\Debug\netcoreapp3.1\PostSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>E:\Downloads\System.Windows.Forms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
