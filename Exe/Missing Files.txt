@@ -2,6 +2,7 @@
 
 * IPDatabase
 * Misc
+    - * Account Scraper
 * TempMail
 * FergsDB (Don't need it unless you bought access)
 * Ddos
