@@ -1,0 +1,7 @@
+- Github is blocking some folders that the program needs to run, you have to create the following folders indentically.
+
+* IPDatabase
+* Misc
+* TempMail
+* FergsDB (Don't need it unless you bought access)
+* Ddos
