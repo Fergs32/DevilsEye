@@ -1,0 +1,3 @@
+https://api.proxyscrape.com/v2/?request=displayproxies&protocol=PROTOCOL_HERE&timeout=TIMEOUT_HERE&country=COUNTRY_HERE&ssl=all&anonymity=all
+https://spys.me/proxy.txt
+https://www.proxy-list.download/api/v1/get?type=PROTOCOL_HERE
