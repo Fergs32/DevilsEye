@@ -1,5 +1,11 @@
 ![image](https://user-images.githubusercontent.com/93891128/218292760-f1cdf946-1c56-4aaf-9068-15c2489d20a3.png)
 
+# DotDoxOffical v1.0.3-beta
+- Added IllictSearches Module (it still in progress and has many bugs, will work on it tonight)
+- Added PhoneDorker (half works, still in dev)
+- Added MCDatabase bot in my discord free for everyone
+- Multiple bug fixes
+
 # DotDoxOffical v1.0.2-beta
 - Added Spotify and Ebay Modules (Username Grabber)
 - New Email/Account Scraper (Option 13)
