@@ -1,0 +1,88 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Ben\\Desktop\\Dox\\Dox\\Dox.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Ben\\Desktop\\Dox\\Dox\\Dox.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ben\\Desktop\\Dox\\Dox\\Dox.csproj",
+        "projectName": "Dox",
+        "projectPath": "C:\\Users\\Ben\\Desktop\\Dox\\Dox\\Dox.csproj",
+        "packagesPath": "C:\\Users\\Ben\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ben\\Desktop\\Dox\\Dox\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ben\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Colorful.Console": {
+              "target": "Package",
+              "version": "[1.2.15, )"
+            },
+            "Jint": {
+              "target": "Package",
+              "version": "[2.11.58, )"
+            },
+            "Leaf.xNet": {
+              "target": "Package",
+              "version": "[5.2.10, )"
+            },
+            "MegaApiClient": {
+              "target": "Package",
+              "version": "[1.10.2, )"
+            },
+            "PhoneNumberParser": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Spectre.Console": {
+              "target": "Package",
+              "version": "[0.46.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

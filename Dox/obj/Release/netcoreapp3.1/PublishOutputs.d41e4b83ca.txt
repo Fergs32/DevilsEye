@@ -1,0 +1,13 @@
+C:\Users\Ben\Desktop\Dox\Dox\bin\Release\netcoreapp3.1\publish\Dox.exe
+C:\Users\Ben\Desktop\Dox\Dox\bin\Release\netcoreapp3.1\publish\Dox.dll
+C:\Users\Ben\Desktop\Dox\Dox\bin\Release\netcoreapp3.1\publish\Dox.deps.json
+C:\Users\Ben\Desktop\Dox\Dox\bin\Release\netcoreapp3.1\publish\Dox.runtimeconfig.json
+C:\Users\Ben\Desktop\Dox\Dox\bin\Release\netcoreapp3.1\publish\Dox.pdb
+C:\Users\Ben\Desktop\Dox\Dox\bin\Release\netcoreapp3.1\publish\Colorful.Console.dll
+C:\Users\Ben\Desktop\Dox\Dox\bin\Release\netcoreapp3.1\publish\Jint.dll
+C:\Users\Ben\Desktop\Dox\Dox\bin\Release\netcoreapp3.1\publish\Leaf.xNet.dll
+C:\Users\Ben\Desktop\Dox\Dox\bin\Release\netcoreapp3.1\publish\MegaApiClient.dll
+C:\Users\Ben\Desktop\Dox\Dox\bin\Release\netcoreapp3.1\publish\Newtonsoft.Json.dll
+C:\Users\Ben\Desktop\Dox\Dox\bin\Release\netcoreapp3.1\publish\CloudFlareUtilities.dll
+C:\Users\Ben\Desktop\Dox\Dox\bin\Release\netcoreapp3.1\publish\PostSharp.dll
+C:\Users\Ben\Desktop\Dox\Dox\bin\Release\netcoreapp3.1\publish\Spectre.Console.dll
