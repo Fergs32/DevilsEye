@@ -12,7 +12,8 @@
           "Jint": "2.11.58",
           "Leaf.xNet": "5.2.10",
           "MegaApiClient": "1.10.2",
-          "Spectre.Console": "0.45.0"
+          "PhoneNumberParser": "3.1.0",
+          "Spectre.Console": "0.46.0"
         },
         "runtime": {
           "Dox.dll": {}
@@ -162,6 +163,14 @@
           }
         }
       },
+      "PhoneNumberParser/3.1.0": {
+        "runtime": {
+          "lib/netstandard2.1/PhoneNumbers.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.1.0.0"
+          }
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
       "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
       "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
@@ -210,14 +219,14 @@
       "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
       "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
       "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
-      "Spectre.Console/0.45.0": {
+      "Spectre.Console/0.46.0": {
         "dependencies": {
           "System.Memory": "4.5.5"
         },
         "runtime": {
           "lib/netstandard2.0/Spectre.Console.dll": {
             "assemblyVersion": "0.0.0.0",
-            "fileVersion": "0.45.0.0"
+            "fileVersion": "0.46.0.0"
           }
         }
       },
@@ -960,6 +969,13 @@
       "path": "newtonsoft.json/10.0.2",
       "hashPath": "newtonsoft.json.10.0.2.nupkg.sha512"
     },
+    "PhoneNumberParser/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-K8RTC4Ed+mrXRT7e8hp/hQtB24UlWa2FaOGi9LdE9PtEozQ+ubNzqGjyXeZknNLUqH2KvM3bWTlRk8+31kYy4g==",
+      "path": "phonenumberparser/3.1.0",
+      "hashPath": "phonenumberparser.3.1.0.nupkg.sha512"
+    },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
       "type": "package",
       "serviceable": true,
@@ -1072,12 +1088,12 @@
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512"
     },
-    "Spectre.Console/0.45.0": {
+    "Spectre.Console/0.46.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-e//13o8/BCrWmwN26eJ4zCzD2iq7iUlqQd+nDI9nJUdnJ/rYAanYiNFZZ7YHwlv48IKuKtRYYP6/wPt1DG67ww==",
-      "path": "spectre.console/0.45.0",
-      "hashPath": "spectre.console.0.45.0.nupkg.sha512"
+      "sha512": "sha512-qd2OMEGxfQW1KLuQj56KKHkIK6eB/IUF/AET5CRl/efROHGsvBehx9shfkL0HgJEHLCwRiR7foWi4/LkdPk18g==",
+      "path": "spectre.console/0.46.0",
+      "hashPath": "spectre.console.0.46.0.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",
