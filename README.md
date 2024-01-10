@@ -1,12 +1,12 @@
 ![image](https://user-images.githubusercontent.com/93891128/218292760-f1cdf946-1c56-4aaf-9068-15c2489d20a3.png)
 
-# DotDoxOffical v1.0.3-beta
+# DevilsEye v1.0.3-beta
 - Added IllictSearches Module (it still in progress and has many bugs, will work on it tonight)
 - Added PhoneDorker (half works, still in dev)
 - Added MCDatabase bot in my discord free for everyone
 - Multiple bug fixes
 
-# DotDoxOffical v1.0.2-beta
+# DevilsEye v1.0.2-beta
 - Added Spotify and Ebay Modules (Username Grabber)
 - New Email/Account Scraper (Option 13)
 - New Module (Proxyscraper + Checker)
@@ -28,11 +28,11 @@
   <img src="https://user-images.githubusercontent.com/93891128/194629923-f21519bc-df46-4962-b09e-403190fe43ce.png" alt="Sublime's custom image"/></p>
 
 
-### DotDoxOfficial
+### DevilsEye
 
-DotDoxOfficial is a project that will collect data on the target, either it a website, a person or anything really. This program can help with that, it has Minecraft analysis modules, google dorking methods, email breach detector and leak finder. And many other unique features.
+DevilsEye is a project that will collect data on the target, either it a website, a person or anything really. This program can help with that, it has Minecraft analysis modules, google dorking methods, email breach detector and leak finder. And many other unique features.
 
-DotDoxOfficial uses public apis, google dorking methods, and much more to gather information on the target.
+DevilsEye uses public apis, google dorking methods, and much more to gather information on the target.
 ## Screenshots
 
 ![App Screenshot](https://user-images.githubusercontent.com/93891128/194621604-5b811000-c45f-459d-96ad-61a2a3fb5454.png)
