@@ -19,7 +19,7 @@ namespace Dox.Configuration.Manager
         public static void ConfigurationImpl()
         {
             IConfiguration config = new ConfigurationBuilder()
-                .AddJsonFile("appsettings.json")
+                .AddJsonFile("config.json")
                 .Build();
             IConfigurationSection section = config.GetSection("Settings");
             try
