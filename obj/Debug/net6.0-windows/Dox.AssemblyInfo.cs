@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("@Fergs32")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("doxing program.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da5257a7169eb31e04d20b99482b2817af67eb1e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db3dc1799b42fffdfc1948d990b9afb95fca39c7")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dox")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dox")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

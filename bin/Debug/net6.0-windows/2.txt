@@ -1,1 +1,0 @@
-{"valid":false,"reason":"invalid_username","msg":"Username is too long","desc":"Your username must be shorter than 15 characters."}
