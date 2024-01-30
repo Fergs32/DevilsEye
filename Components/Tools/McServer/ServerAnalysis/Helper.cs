@@ -1,11 +1,5 @@
-﻿using Colorful;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Drawing;
-using System.IO;
-using System.Linq;
+﻿using System.Diagnostics;
 using System.Text.RegularExpressions;
-using System.Threading;
 using Console = System.Console;
 
 namespace Dox.Components.Tools.ServerAnalysis

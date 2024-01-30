@@ -1,8 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
-
-namespace Dox.Components.Dorking.Filter
+﻿namespace Dox.Components.Dorking.Filter
 {
     public class UrlFilter
     {

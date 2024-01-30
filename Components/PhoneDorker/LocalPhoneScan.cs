@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using PhoneNumbers;
+﻿using PhoneNumbers;
 using Console = Colorful.Console;
-using System.Linq;
 using Color = System.Drawing.Color;
 
 namespace Dox.Components.PhoneDorker

@@ -1,7 +1,4 @@
 ﻿using Dox.Components.UsernameGrabber.Modules;
-using System;
-using System.Drawing;
-using System.Threading;
 using static Dox.Components.UsernameGrabber.Modules.ModulesResults;
 
 namespace Dox.Components.UsernameGrabber

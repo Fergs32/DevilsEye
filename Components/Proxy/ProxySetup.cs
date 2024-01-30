@@ -1,7 +1,4 @@
 ﻿using Spectre.Console;
-using System;
-using System.Drawing;
-using System.IO;
 
 namespace Dox.Components.Proxy
 {

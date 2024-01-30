@@ -33,3 +33,4 @@ C:\Users\Ben\Desktop\Dox\Dox\obj\Debug\net6.0-windows\refint\Dox.dll
 C:\Users\Ben\Desktop\Dox\Dox\obj\Debug\net6.0-windows\Dox.pdb
 C:\Users\Ben\Desktop\Dox\Dox\obj\Debug\net6.0-windows\Dox.genruntimeconfig.cache
 C:\Users\Ben\Desktop\Dox\Dox\obj\Debug\net6.0-windows\ref\Dox.dll
+C:\Users\Ben\Desktop\Dox\Dox\obj\Debug\net6.0-windows\Dox.sourcelink.json

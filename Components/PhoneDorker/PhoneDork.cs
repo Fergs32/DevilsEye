@@ -87,10 +87,8 @@ namespace Dox.Components.PhoneDorker
                     test.Add($"site:reddit.com intext:\"{numPrefix}\" OR intext:\"+{numPrefix}\" OR intext:\"0{num}\" OR intext:\"{num}\"");
 
                     // we need to start the ScanDorksAsync function here
-
                     Task scan = ScanDorksAsync();
                     scan.Wait();
-
                }
             }
             catch (Exception ex)
@@ -113,6 +111,13 @@ namespace Dox.Components.PhoneDorker
 
                         Console.WriteLine("[+] Using Proxy: " + Proxy, Color.DarkMagenta);
 
+                    } catch (FileNotFoundException)
+                    {
+                        Console.WriteLine("[+] No proxies found, please use Proxy Scraper in module.", Color.DarkMagenta);
+                    }
+                    try
+                    {
+
                         client.IgnoreProtocolErrors = true;
                         client.AcceptEncoding = "gzip, deflate";
                         client.AddHeader("Accept-Language", "en-US,en;q=0.9");
@@ -124,6 +129,7 @@ namespace Dox.Components.PhoneDorker
                         client.KeepAliveTimeout = 10000;
                         client.ReadWriteTimeout = 10000;
                         client.SslProtocols = SslProtocols.Tls | SslProtocols.Tls12 | SslProtocols.Tls11;
+                        // ssl certificate validation callback to allow all certificates (self signed, expired, etc.) 
                         client.SslCertificateValidatorCallback += (sender, certificate, chain, sslPolicyErrors) => true;
                         client.Proxy = HttpProxyClient.Parse(Proxy);
                         var response = client.Get($"https://www.google.com/search?q={dork}&num=100&hl=en&complete=0&safe=off&filter=0&btnG=Search&start=0").ToString();
@@ -135,6 +141,7 @@ namespace Dox.Components.PhoneDorker
                         }
                         else
                         {
+                            Console.WriteLine("[+] Proxy [" + Proxy + "] succeeded!", Color.Green);
                             ExtractResults(content);
                         }
                     }

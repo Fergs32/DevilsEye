@@ -9,10 +9,7 @@ using Dox.Components.AccountLeaks;
 using Dox.Components.UsernameGrabber;
 using Dox.Components.UsernameGrabber.Modules;
 using Spectre.Console;
-using System;
 using Dox.Components.PhoneDorker;
-using System.Threading;
-using System.Threading.Tasks;
 using Dox.Configuration.Manager;
 using Color = Spectre.Console.Color;
 
@@ -111,9 +108,6 @@ namespace Dox
                         break;
                     default:
                         Colorful.Console.WriteLine("[Error] Invalid Input", System.Drawing.Color.Red);
-                        break;
-                    case "99":
-                        Console.WriteLine(1 * 60000L);
                         break;
                 }
             } while (!int.TryParse(Colorful.Console.ReadLine(), out Data.Option));

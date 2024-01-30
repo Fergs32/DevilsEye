@@ -1,5 +1,18 @@
 ![image](https://user-images.githubusercontent.com/93891128/218292760-f1cdf946-1c56-4aaf-9068-15c2489d20a3.png)
 
+# DevilsEye v1.0.4-beta
+- Partially finished Phone Dorker Module (works well with proxies)
+- Added better interactivity for main menu (up & down keys)
+- Added better threading for port scanner
+- Added Configuration section (will have more use soon)
+- Some minor bug fixes
+- Minor improvements in ProxyChecker
+- Started on Ddo* Script
+- Cleaned up code, slowly implementing .net 5.0+ coding conventions (nullables, null coalescing & more)
+
+- Regarding False AV flags, i'll actively work on preventing these. You can check source & scan on totalvirus, there's nothing!!!
+
+
 # DevilsEye v1.0.3-beta
 - Added IllictSearches Module (it still in progress and has many bugs, will work on it tonight)
 - Added PhoneDorker (half works, still in dev)

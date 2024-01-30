@@ -1,9 +1,6 @@
-﻿using Colorful;
-using Dox.Components.Tools.ServerAnalysis;
+﻿using Dox.Components.Tools.ServerAnalysis;
 using Leaf.xNet;
-using System.Drawing;
 using System.Text.RegularExpressions;
-using System.Threading;
 using Console = System.Console;
 
 namespace Dox.Components.Minecraft

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Net.NetworkInformation;
 using System.Text;
-using System.Threading;
+
 namespace Dox.Components.Ddos
 {
     public class StartAttack

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Drawing;
-using System.IO;
-using System.Net;
-using System.Threading;
+﻿using System.Net;
 
 namespace Dox.Components.SaveToFile
 {
