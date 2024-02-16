@@ -34,3 +34,12 @@ C:\Users\Ben\Desktop\Dox\Dox\obj\Debug\net6.0-windows\Dox.pdb
 C:\Users\Ben\Desktop\Dox\Dox\obj\Debug\net6.0-windows\Dox.genruntimeconfig.cache
 C:\Users\Ben\Desktop\Dox\Dox\obj\Debug\net6.0-windows\ref\Dox.dll
 C:\Users\Ben\Desktop\Dox\Dox\obj\Debug\net6.0-windows\Dox.sourcelink.json
+C:\Users\Ben\Desktop\Dox\Dox\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Ben\Desktop\Dox\Dox\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Ben\Desktop\Dox\Dox\bin\Debug\net6.0-windows\Microsoft.Extensions.Http.dll
+C:\Users\Ben\Desktop\Dox\Dox\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\Ben\Desktop\Dox\Dox\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Ben\Desktop\Dox\Dox\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\Ben\Desktop\Dox\Dox\bin\Debug\net6.0-windows\Spectre.Console.Json.dll
+C:\Users\Ben\Desktop\Dox\Dox\bin\Debug\net6.0-windows\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll
+C:\Users\Ben\Desktop\Dox\Dox\bin\Debug\net6.0-windows\Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter.dll

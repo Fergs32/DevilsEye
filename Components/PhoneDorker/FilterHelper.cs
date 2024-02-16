@@ -31,7 +31,7 @@
             {
                 File.AppendAllLines(Directory.GetCurrentDirectory() + @"\PhoneDorker\filtered_results.txt", filteredResults);
             }
-            // Clear the list so there's no duplicates
+            // Clear the list so there's no infinite loop of results
             filteredResults?.Clear();
         } 
     }

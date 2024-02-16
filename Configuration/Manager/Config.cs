@@ -15,13 +15,43 @@ namespace Dox.Configuration.Manager
             public static bool ProxyDebug;
             public static bool ProxyDump;
             public static bool DatabaseAPIKey;
+            public static bool IPHistory;
+            public static string TrestleAPIKey = "YOUR-API-KEY-HERE"; // Do not change this to your api key, change it in config.json;
         }        
+
+        public static IConfiguration? section { get; set; }
         public static void ConfigurationImpl()
         {
+            if (File.Exists(Directory.GetCurrentDirectory() + @"/config.json"))
+            {
+                Console.WriteLine($"[{DateTime.Now:h:mm:ss tt}] Found config.json");
+                if (File.ReadAllText(Directory.GetCurrentDirectory() + @"/config.json") == "")
+                {
+                    Thread.Sleep(2000);
+                    Console.WriteLine($"[{DateTime.Now:h:mm:ss tt}] Empty config.json");
+                    Console.WriteLine($"[{DateTime.Now:h:mm:ss tt}] Writing configuration settings to config.json...");
+                    ConfigWriter.BuildConfig();
+                }
+                else
+                {
+                    Console.WriteLine($"[{DateTime.Now:h:mm:ss tt}] Reading configuration settings from config.json...");
+                }
+            }
+            else
+            {
+                using (var file = File.Create(Directory.GetCurrentDirectory() + "/config.json"))
+                {
+                    file.Dispose();
+                }
+                Console.WriteLine($"[{DateTime.Now:h:mm:ss tt}] Created config.json");
+                Thread.Sleep(2000);
+                Console.WriteLine($"[{DateTime.Now:h:mm:ss tt}] Writing configuration settings to config.json...");
+                ConfigWriter.BuildConfig();
+            }
             IConfiguration config = new ConfigurationBuilder()
                 .AddJsonFile("config.json")
                 .Build();
-            IConfigurationSection section = config.GetSection("Settings");
+            section = config.GetSection("Settings");
             try
             {
                 if (section["DebugMode"] == "true")
@@ -39,9 +69,20 @@ namespace Dox.Configuration.Manager
                     Console.WriteLine("[+] Proxy Dump Enabled");
                     ConfigSettings.ProxyDump = true;
                 }
+                if (section["IPHistory"] == "true")
+                {
+                    Console.WriteLine("[+] IP History Enabled");
+                    ConfigSettings.IPHistory = true;
+                }
                 if (section["DatabaseAPIKey"] == "true")
                 {
                     // TODO: Implement Database API Key
+                }
+                if (section["TrestleAPIKey"] != "YOUR-API-KEY-HERE")
+                {
+                    Console.WriteLine("[+] Trestle API Key Found");
+                    ConfigSettings.TrestleAPIKey = section["TrestleAPIKey"] ?? "YOUR-API-KEY-HERE";
+                    Console.WriteLine("[+] Trestle API Key: " + ConfigSettings.TrestleAPIKey);
                 }
                 Console.Write($"[{DateTime.Now:h:mm:ss tt}] ", System.Drawing.Color.Magenta); Console.Write("Registered Interal Configuration Settings\n", System.Drawing.Color.DarkMagenta);
                 Thread.Sleep(1000);
@@ -66,7 +107,7 @@ namespace Dox.Configuration.Manager
             }
             if (!Directory.Exists(Directory.GetCurrentDirectory() + "/Proxies"))
             {
-                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "/Proies");
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + "/Proxies");
                 Console.WriteLine("[+] Created Proxies Folder");
             }
             if (!Directory.Exists(Directory.GetCurrentDirectory() + "/IPDatabase"))
@@ -79,7 +120,7 @@ namespace Dox.Configuration.Manager
                 Directory.CreateDirectory(Directory.GetCurrentDirectory() + "/Ddos");
                 Console.WriteLine("[+] Created Ddos Folder");
             }
-            Console.Write($"[{DateTime.Now:h:mm:ss tt}] ", Color.Magenta); Console.Write("Validated output folders\n", Color.DarkMagenta);
+            Console.Write($"[{DateTime.Now:h:mm:ss tt}] ", System.Drawing.Color.Magenta); Console.Write("Validated output folders\n", System.Drawing.Color.DarkMagenta);
         }
     }  
 }

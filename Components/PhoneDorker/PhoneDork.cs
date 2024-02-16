@@ -13,6 +13,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.IO;
 using System.Security.Authentication;
+using Dox.Configuration.Manager;
 
 namespace Dox.Components.PhoneDorker
 {
@@ -117,7 +118,6 @@ namespace Dox.Components.PhoneDorker
                     }
                     try
                     {
-
                         client.IgnoreProtocolErrors = true;
                         client.AcceptEncoding = "gzip, deflate";
                         client.AddHeader("Accept-Language", "en-US,en;q=0.9");
@@ -134,24 +134,24 @@ namespace Dox.Components.PhoneDorker
                         client.Proxy = HttpProxyClient.Parse(Proxy);
                         var response = client.Get($"https://www.google.com/search?q={dork}&num=100&hl=en&complete=0&safe=off&filter=0&btnG=Search&start=0").ToString();
                         string content = response.ToString();
-                        File.AppendAllLines("results.txt", new[] { content });
                         if (content.Contains("The document has moved") || content.Contains("302 Moved"))
                         {
-                            Console.WriteLine($"[-] Proxy [{Proxy}] failed, retrying...", Color.Red);
+                            if (Config.section?["ProxyDebug"] == "true") Console.WriteLine($"[ProxyDebug]  Proxy [{Proxy}] detected by captcha, retry...", Color.Red);
                         }
                         else
                         {
-                            Console.WriteLine("[+] Proxy [" + Proxy + "] succeeded!", Color.Green);
-                            ExtractResults(content);
+                            if (Config.section?["ProxyDebug"] == "true") Console.WriteLine($"[ProxyDebug] Proxy [{Proxy}] succeeded!\"", Color.LightGreen);
+                            ExtractResults(content, Proxy);
                         }
                     }
                     catch(HttpException)
                     {
-                        Console.WriteLine($"[-] Proxy [{Proxy}] failed, retrying...", Color.Red);
+                        // could I make this a functional style statement
+                        if (Config.section?["ProxyDebug"] == "true") Console.WriteLine($"[ProxyDebug] Proxy [{Proxy}] failed to establish connection, retrying...", Color.Red);
                     }
                     catch(Exception)
                     {
-                        Console.WriteLine($"[-] Proxy [{Proxy}] failed, retrying...", Color.Red);
+                        if (Config.section?["ProxyDebug"] == "true") Console.WriteLine($"[ProxyDebug] Proxy [{Proxy}] failed, retrying...", Color.Red);
                     }
                 }
             }
@@ -159,11 +159,10 @@ namespace Dox.Components.PhoneDorker
             return Task.CompletedTask;
         }
 
-        private static void ExtractResults(string content)
+        private static void ExtractResults(string content, string? proxy)
         {
             // dump the results into the executable directory of each content
-            Console.WriteLine("[+] Extracting results...");
-            File.AppendAllText("results.txt", content);
+            Console.WriteLine($"[+] Extracting results for proxy [{proxy}]");
             List<string> urlList = new List<string>().ToList();
             Regex regex = new Regex("<a href=\"(.*?)\" data-ved", RegexOptions.IgnoreCase);
             Match m = regex.Match(content);

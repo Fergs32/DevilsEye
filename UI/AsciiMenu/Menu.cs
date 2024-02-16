@@ -108,10 +108,33 @@ namespace Dox.AsciiMenu
             }
         }
 
+        public static void ReversePhone()
+        {
+            var Logo = new string[]
+            {
+                "",
+                "",
+
+"\t██████╗░███████╗██╗░░░██╗███████╗██████╗░░██████╗███████╗  ██████╗░██╗░░██╗░█████╗░███╗░░██╗███████╗",
+"\t██╔══██╗██╔════╝██║░░░██║██╔════╝██╔══██╗██╔════╝██╔════╝  ██╔══██╗██║░░██║██╔══██╗████╗░██║██╔════╝",
+"\t██████╔╝█████╗░░╚██╗░██╔╝█████╗░░██████╔╝╚█████╗░█████╗░░  ██████╔╝███████║██║░░██║██╔██╗██║█████╗░░",
+"\t██╔══██╗██╔══╝░░░╚████╔╝░██╔══╝░░██╔══██╗░╚═══██╗██╔══╝░░  ██╔═══╝░██╔══██║██║░░██║██║╚████║██╔══╝░░",
+"\t██║░░██║███████╗░░╚██╔╝░░███████╗██║░░██║██████╔╝███████╗  ██║░░░░░██║░░██║╚█████╔╝██║░╚███║███████╗",
+"\t╚═╝░░╚═╝╚══════╝░░░╚═╝░░░╚══════╝╚═╝░░╚═╝╚═════╝░╚══════╝  ╚═╝░░░░░╚═╝░░╚═╝░╚════╝░╚═╝░░╚══╝╚══════╝",
+"",
+"                                         { Phones are useless - Sgt Hitter }",
+""
+            };
+            foreach (string line in Logo)
+            {
+                Colorful.Console.WriteLine(line, Color.DarkMagenta);
+            }
+        }
+
         public static void ReturnMenu()
         {
             Colorful.Console.Write("\n[+] Would you like to return to Menu? (Y/N): ");
-            string URply = Colorful.Console.ReadLine();
+            string URply = Colorful.Console.ReadLine().ToUpper();
             switch (URply)
             {
                 case "Y":

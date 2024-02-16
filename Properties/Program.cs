@@ -4,7 +4,6 @@ using Dox.Components.EmailGrabber.Modules;
 using Dox.Components.Minecraft;
 using Dox.Components.Proxy;
 using Dox.Components.TempMail;
-using Dox.Components.Tools;
 using Dox.Components.AccountLeaks;
 using Dox.Components.UsernameGrabber;
 using Dox.Components.UsernameGrabber.Modules;
@@ -12,6 +11,11 @@ using Spectre.Console;
 using Dox.Components.PhoneDorker;
 using Dox.Configuration.Manager;
 using Color = Spectre.Console.Color;
+using Dox.Components.Tools.PortScan;
+using Dox.Components.OSINT;
+using Dox.Components.PersonLookup;
+using Dox.Components.PhoneDorker.ReverseLookup;
+using Dox.Components.PhoneDorker.CNAM;
 
 namespace Dox
 {
@@ -43,7 +47,7 @@ namespace Dox
                 Console.WriteLine(ex.Message);
                 Console.ReadLine();
             }
-            Console.Title = ".DoxOfficial | Coded by https://github.com/Fergs32";
+            Console.Title = "Devils Eye | Coded by https://github.com/Fergs32";
             do
             {
                 Console.Clear();
@@ -56,15 +60,21 @@ namespace Dox
                      .PageSize(10)
                          .MoreChoicesText("[grey](Navigate down to find more modules)[/]")
                             .AddChoices(new[] {
-                            "IP Lookup", "Username Lookup", "Breach Detector",
-                            "First & Lastname", "Google Dork Target", "Minecraft Dox",
-                            "Phone Dorker", "Get Information on Host/Domain", "Create Temp Mail Server (free)",
-                            "Minecraft Server Info", "DDOS", "Dox Bin Layouts", "Proxy Scraper & Tester", "Email Scraper/Accounts", "99"
+                            "IP Lookup", "Username Lookup", "Breach Detector", "First & Lastname (dont use, in development)", "Google Dork Target", "Minecraft Dox",
+                            "Phone Dorker", "Reverse Phone Lookup", "Phone CNAM Report", "Port Scanner", "Create Temp Mail Server (free)", "Minecraft Server Info", "DDOS",
+                            "Dox Bin Layouts", "Proxy Scraper & Tester", "Email Scraper/Accounts", "OSINT Tips"
             }));
                 switch (module)
                 {
                     case "IP Lookup":
-                        Components.IP.GetIpAddress();
+                        try
+                        {
+                            Components.IP.GetIpAddress();
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine(ex);
+                        }
                         break;
                     case "Username Lookup":
                         Core.GetUsernameInfo();
@@ -72,9 +82,8 @@ namespace Dox
                     case "Breach Detector":
                         EmailBreachAPI.GetBreaches();
                         break;
-                    case "First & Lastname":
-                        Console.WriteLine("In Development");
-                        Console.ReadLine();
+                    case "First & Lastname (USA)":
+                        PersonSearch.GetPerson();
                         break;
                     case "Google Dork Target":
                         GoogleDorks.Entry();
@@ -85,8 +94,14 @@ namespace Dox
                     case "Phone Dorker":
                         PhoneDork.Initialise();
                         break;
-                    case "Get Information on Host/Domain":
-                        HostName.DNS.GetDNS();
+                    case "Reverse Phone Lookup":
+                        Reverse.GetNumber();
+                        break;
+                    case "Port Scanner":
+                        Portscanner.DNS.GetDNS();
+                        break;
+                    case "Phone CNAM Report":
+                        Lookup.GetNumber();
                         break;
                     case "Create Temp Mail Server (free)":
                         Mail.CreateEmail();
@@ -105,6 +120,9 @@ namespace Dox
                         break;
                     case "Email Scraper/Accounts":
                         Scraper.Start();
+                        break;
+                    case "OSINT Tips":
+                        Tips.GetTips();
                         break;
                     default:
                         Colorful.Console.WriteLine("[Error] Invalid Input", System.Drawing.Color.Red);

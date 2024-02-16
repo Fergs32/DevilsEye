@@ -4,5 +4,8 @@
     "ProxyDebug": "true",
     "ProxyDump": "true",
     "DebugMode": "true",
+    "IPHistory": "true",
+    "PortScanDebug": "false",
+    "TrestleAPIKey": "YOUR-API-KEY-HERE"
   }
 }

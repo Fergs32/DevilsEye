@@ -68,13 +68,21 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "PhoneNumberParser": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[3.3.1, )"
             },
             "Spectre.Console": {
               "target": "Package",
-              "version": "[0.46.0, )"
+              "version": "[0.48.0, )"
+            },
+            "Spectre.Console.Json": {
+              "target": "Package",
+              "version": "[0.48.0, )"
             }
           },
           "imports": [

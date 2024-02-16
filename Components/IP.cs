@@ -1,8 +1,11 @@
-﻿using System;
+﻿using Spectre.Console;
+using System;
+using System.Drawing;
 using System.Net;
 using System.Net.Http;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Dox.Components
 {
@@ -10,7 +13,6 @@ namespace Dox.Components
     {
         private const string ApiUrl = "http://ipwhois.app/json/";
         private static readonly HttpClient HttpClient = new HttpClient();
-
         public static void GetIpAddress()
         {
             IPAddress? ipAddress;
@@ -21,7 +23,6 @@ namespace Dox.Components
                 AsciiMenu.Menu.GetTitle();
                 Console.Write("[+] IP: ");
             } while (!IPAddress.TryParse(Console.ReadLine(), out ipAddress));
-
             GetIpInformation(ipAddress);
         }
 
@@ -30,9 +31,6 @@ namespace Dox.Components
             try
             {
                 HttpResponseMessage httpResponse = await HttpClient.GetAsync(ApiUrl + ip);
-                /*
-                 * Re-coded this section to have better code practices and overall efficiency + safety when getting http content.
-                 */
                 if (httpResponse.IsSuccessStatusCode)
                 {
                     string responseContent = await httpResponse.Content.ReadAsStringAsync();
@@ -68,13 +66,8 @@ namespace Dox.Components
             string longitude = GetJsonValue(responseContent, "\"longitude\":(.*?),");
             string isp = GetJsonValue(responseContent, "\"isp\":\"(.*?)\",");
             string currency = GetJsonValue(responseContent, "\"currency\":\"(.*?)\",");
-
             PrintInformation(ip, status, type, continent, continentCode, countryCode, phone, region, city, latitude, longitude, isp, currency);
         }
-
-        /*
-         * Will return the result giving by the pattern.
-         */
         private static string GetJsonValue(string input, string pattern)
         {
             Match match = Regex.Match(input, pattern);
@@ -83,50 +76,54 @@ namespace Dox.Components
 
         private static void PrintInformation(IPAddress IP, string status, string type, string continent, string continent_code, string country_code, string phone, string region, string city, string latitude, string longitude, string isp, string currency)
         {
-            var print = new string[]
+            try
             {
-            "\t[" + IP + "]" + "\t[" + status.ToUpper() + "]\n",
-            "[+] Type: " + type,
-            "[+] Continent: " + continent,
-            "[+] Continent Code: " + continent_code,
-            "[+] Country Code: " + country_code,
-            "[+] Mobile Phone: " + phone,
-            "[+] Region: " + region,
-            "[+] City: " + city,
-            "[+] Latitude: " + latitude,
-            "[+] Longitude: " + longitude,
-            "[+] ISP: " + isp,
-            "[+] Currency: " + currency,
-            "\n[+] Map Viewer: www.itilog.com/en/gps/" + latitude + "/" + longitude,
-            };
-
-            Console.WriteLine("\n");
-            foreach (string line in print)
-            {
-                Console.WriteLine(line);
+                SaveToFile.SaveToFile.IP_MakeTextFile(IP, status, type, continent, continent_code, country_code, phone, region, city, latitude, longitude, isp, currency);
+                var print = new string[] {
+                "\t[" + IP + "]" + "\t[" + status.ToUpper() + "]\n",
+                "[+] Type: " + type,
+                "[+] Continent: " + continent,
+                "[+] Continent Code: " + continent_code,
+                "[+] Country Code: " + country_code,
+                "[+] Mobile Phone: " + phone,
+                "[+] Region: " + region,
+                "[+] City: " + city,
+                "[+] Latitude: " + latitude,
+                "[+] Longitude: " + longitude,
+                "[+] ISP: " + isp,
+                "[+] Currency: " + currency,
+                "\n[+] Map Viewer: www.itilog.com/en/gps/" + latitude + "/" + longitude,
+                };   
+                Console.WriteLine("\n");
+                foreach (string line in print)
+                {
+                    Console.WriteLine(line);
+                }
+                SaveConfirm(IP, status, type, continent, continent_code, country_code, phone, region, city, latitude, longitude, isp, currency);
             }
-
-            Console.Write("\n[+] Would you like to save this to your database? (Y/N): ");
-            string reply = Console.ReadLine() ?? "N";
-
-            Console.WriteLine(reply);
-            Console.ReadLine();
-            switch (reply.ToUpper())
+            catch (Exception ex)
             {
-                case "Y":
-                    Console.WriteLine("Test");
-                    Console.ReadLine();
+                Console.WriteLine(ex);
+            }
+        }
+        private static void SaveConfirm(IPAddress IP, string status, string type, string continent, string continent_code, string country_code, string phone, string region, string city, string latitude, string longitude, string isp, string currency)
+        {
+            try
+            {
+                var confirm = AnsiConsole.Confirm("Would you like to save this to your database?");
+                Console.ReadLine();
+                if (confirm)
+                {
+
                     SaveToFile.SaveToFile.IP_MakeTextFile(IP, status, type, continent, continent_code, country_code, phone, region, city, latitude, longitude, isp, currency);
-                    break;
-
-                case "N":
+                }
+                else
+                {
                     Console.Clear();
-                    Program.Main();
-                    break;
-
-                default:
-                    Console.WriteLine("[Error] Invalid answer");
-                    break;
+                }
+            } catch (Exception ex)
+            {
+                Console.WriteLine(ex);
             }
         }
     }

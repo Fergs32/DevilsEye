@@ -6,11 +6,11 @@ namespace Dox.Components.Tools.ServerAnalysis
 {
     public class Helper
     {
-        private static string AddressesList;
-        private static string NameServersList;
-        private static string MXRecordList;
+        private static string? AddressesList;
+        private static string? NameServersList;
+        private static string? MXRecordList;
 
-        private static string string_extracted_values;
+        private static string? string_extracted_values;
 
         public static string ExtractAddresses(string input)
         {
