@@ -1,5 +1,18 @@
 ![image](https://user-images.githubusercontent.com/93891128/218292760-f1cdf946-1c56-4aaf-9068-15c2489d20a3.png)
 
+# DevilsEye v1.0.5-beta
+- Trestle API Integration (Gives good results on USA/CA numbers. Including (Addresses, names, postcodes)
+- CNAM Module (Trestle API)
+- Reverse Phone Module (Trestle API)
+- Minor configuration changes and improvements.
+- File saving improvements
+- OSINT Tips & Company Search (IN PROGRESS)
+- Fixed 1 AV Alert, but another one persists (I believe its exitsettings.cs)
+
+- Trestle API Modules
+  ![image](https://github.com/Fergs32/DevilsEye/assets/93891128/7487fc9b-5967-49e6-88a1-a26fdce093d8)
+
+  
 # DevilsEye v1.0.4-beta
 - Partially finished Phone Dorker Module (works well with proxies)
 - Added better interactivity for main menu (up & down keys)
@@ -11,7 +24,6 @@
 - Cleaned up code, slowly implementing .net 5.0+ coding conventions (nullables, null coalescing & more)
 
 - Regarding False AV flags, i'll actively work on preventing these. You can check source & scan on totalvirus, there's nothing!!!
-
 
 # DevilsEye v1.0.3-beta
 - Added IllictSearches Module (it still in progress and has many bugs, will work on it tonight)
